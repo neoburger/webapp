@@ -88,12 +88,6 @@ const Header: FC<Props> = ({ setShowDrawer, language }) => {
 					</Link>
 				</div>
 				<div className={style.pageLink}>
-					<Link href={URLGen('airdrop', language)}>
-						<a className={`${style.linkFont} ${router.pathname.includes('/airdrop') ? style.bolder : ''}`}>
-							{t('airdrop')}
-						</a>
-					</Link>
-				</div>
 				{/* <div className={style.pageLink}>
                     <Link
                         href="/governance"
@@ -101,7 +95,6 @@ const Header: FC<Props> = ({ setShowDrawer, language }) => {
                         <a className={`${style.linkFont} ${router.pathname === '/governance' ? style.bolder : ''}`}>{t('governance')}</a>
                     </Link>
                 </div> */}
-				<div className={style.pageLink}>
 					<Link href={URLGen('treasury', language)}>
 						<a className={`${style.linkFont} ${router.pathname.includes('/treasury') ? style.bolder : ''}`}>
 							{t('treasury')}

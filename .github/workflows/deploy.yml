@@ -22,7 +22,7 @@ jobs:
                   mv .out/* ./
                   rm -rf .out
                   touch .nojekyll
-                  echo 'neoburger.io' >CNAME
+                  echo 'app.neoburger.io' >CNAME
                   git checkout -b gh-pages
             - name: Save
               run: |

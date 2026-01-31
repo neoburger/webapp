@@ -139,7 +139,7 @@ const AirDrop: NextPage = () => {
 	}
 
 	// 更新领取状态
-	const updateClaimStatus = (claimParams?: ClaimParams[]) => {
+		const updateClaimStatus = (claimParams?: ClaimParams[]) => {
 		if (claimParams) {
 			Promise.all(claimParams.map((v) => nobugIsClaimed(v.scripthash, v.amount, v.nonce, v.proof))).then(
 				(res) => {
@@ -328,9 +328,8 @@ const AirDrop: NextPage = () => {
 }
 
 export async function getStaticPaths() {
-	const paths = getAllLanguageSlugs()
 	return {
-		paths,
+		paths: [],
 		fallback: false,
 	}
 }
