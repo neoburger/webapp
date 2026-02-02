@@ -2,7 +2,7 @@
 yarn export
 cd out
 touch .nojekyll
-echo 'neoburger.io' >CNAME
+echo 'app.neoburger.io' >CNAME
 git init
 git add -A
 git commit -m 'deploy'

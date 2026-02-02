@@ -6,7 +6,7 @@ let baseURL = '',
 
 switch (mode) {
 	case 'github':
-		baseURL = 'https://neoburger.io'
+		baseURL = 'https://app.neoburger.io'
 		break
 	case 'server':
 		baseURL = 'http://127.0.0.1:80'
