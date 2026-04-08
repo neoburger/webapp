@@ -25,7 +25,7 @@ const constants = {
   BASE58CHARS: "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz",
   TOADDRESS: "NPmdLGJN47EddqYcxixdGMhtkr7Z5w4Aos",
   TESTNET: "https://testneofura.ngd.network:444",
-  MAINNET: "https://neofura.ngd.network",
+  MAINNET: "https://mainnet1.neo.coz.io:443",
   MAINNET2: "https://n3seed1.ngd.network:10332",
   FSID_BASE_URL:
     "https://filesend.ngd.network/gate/get/CeeroywT8ppGE4HGjhpzocJkdb2yu3wD5qCGFTjkw1Cc",
