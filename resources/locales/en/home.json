@@ -28,5 +28,7 @@
     "airdrop": "Airdrop",
     "dashboard": "Dashboard",
     "governance": "Governance",
-    "treasury": "Treasury"
+    "treasury": "Treasury",
+    "announceText": "Withdraw your funds — NeoBurger service is ending.",
+    "announceBtn": "see the announcement"
 }

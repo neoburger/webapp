@@ -274,20 +274,22 @@ const Dashboard: NextPage = () => {
 }
 
 export async function getStaticPaths() {
-	const paths = getAllLanguageSlugs()
 	return {
-		paths,
+		paths: [],
 		fallback: false,
 	}
 }
 
 export async function getStaticProps({ params }: any) {
+	return { notFound: true }
+	/*
 	const language = getLanguage(params.lang)
 	return {
 		props: {
 			language,
 		},
 	}
+	*/
 }
 
 export default Dashboard

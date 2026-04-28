@@ -46,7 +46,7 @@ const Home: NextPage<Props> = ({ setShowDrawer }) => {
   const [operateType, setOperateType] = useState<"burgerStation" | "jazzUp">(
     "burgerStation"
   ); // 操作界面切换
-  const [apr, setApr] = useState("-%"); // 收益年度百分比
+  // const [apr, setApr] = useState("-%"); // 收益年度百分比
   const [style, setStyle]: any = useState(style_pc);
   const operateRef = useRef<HTMLDivElement>(null);
 
@@ -80,6 +80,7 @@ const Home: NextPage<Props> = ({ setShowDrawer }) => {
   }, []);
 
   // 收益年度百分比
+  /*
   useEffect(() => {
     if (!quoteArr?.[1]) {
       setApr("-%");
@@ -103,6 +104,7 @@ const Home: NextPage<Props> = ({ setShowDrawer }) => {
       );
     });
   }, [quoteArr]);
+  */
 
   const exchangeRate = useMemo(() => {
     if (totalSupply && quoteArr?.[0]) {
@@ -122,6 +124,17 @@ const Home: NextPage<Props> = ({ setShowDrawer }) => {
   return (
     <div>
       <div className={style.topBackground}>
+        <div className={style.announceBar}>
+          <span className={style.announceText}>{t("announceText")}</span>
+          <a
+            className={style.announceBtn}
+            href="https://neoburger.io"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t("announceBtn")}
+          </a>
+        </div>
         <section className={style.topSection}>
           <div>
             <h1 className={style.title}>{t("name")}</h1>
@@ -136,11 +149,14 @@ const Home: NextPage<Props> = ({ setShowDrawer }) => {
                 </div>
                 <div className={style.totalPrice}>{exchangeRate}</div>
               </div>
+              {/*
               <div className={style.hideInMobile}>
                 <div className={style.bubbleTitle}>APR</div>
                 <div className={style.bubbleText}>{apr}</div>
               </div>
+              */}
             </div>
+            {/*
             <div
               className={`${style.bubbleWrap} ${style.hideInPC} ${style.marginBottom50}`}
             >
@@ -149,6 +165,7 @@ const Home: NextPage<Props> = ({ setShowDrawer }) => {
                 <div className={style.bubbleText}>{apr}</div>
               </div>
             </div>
+            */}
           </div>
           <div className={style.introLogo}>
             <Image src={intro} alt="intro" />
@@ -187,6 +204,7 @@ const Home: NextPage<Props> = ({ setShowDrawer }) => {
             setShowDrawer={setShowDrawer}
           />
         </div>
+        {/*
         <section className={style.section}>
           <h1 className={style.sectionTitle}>{t("what")}</h1>
           <div className={style.sectionCard}>
@@ -302,6 +320,7 @@ const Home: NextPage<Props> = ({ setShowDrawer }) => {
             </div>
           </div>
         </section>
+        */}
       </main>
       {address && network !== "N3MainNet" && network !== "MainNet" ? (
         <Alert value={t("networkErr")} />

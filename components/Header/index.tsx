@@ -87,14 +87,8 @@ const Header: FC<Props> = ({ setShowDrawer, language }) => {
 						</a>
 					</Link>
 				</div>
+				{/*
 				<div className={style.pageLink}>
-				{/* <div className={style.pageLink}>
-                    <Link
-                        href="/governance"
-                    >
-                        <a className={`${style.linkFont} ${router.pathname === '/governance' ? style.bolder : ''}`}>{t('governance')}</a>
-                    </Link>
-                </div> */}
 					<Link href={URLGen('treasury', language)}>
 						<a className={`${style.linkFont} ${router.pathname.includes('/treasury') ? style.bolder : ''}`}>
 							{t('treasury')}
@@ -112,6 +106,7 @@ const Header: FC<Props> = ({ setShowDrawer, language }) => {
 						</a>
 					</Link>
 				</div>
+				*/}
 				<div className={style.pageLink}>
 					<a className={style.linkFont} target='_blank' rel='noreferrer' href='https://neoburger.github.io/'>
 						{t('doc')}

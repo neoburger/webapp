@@ -1,7 +1,7 @@
 .main {
 	overflow: hidden;
 	position: relative;
-	padding: 0 25px;
+	padding: 0 25px 80px;
 }
 
 .topSection {
@@ -194,12 +194,46 @@
 	background-color: #ffc13e;
 }
 
+.announceBar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 84px 16px 14px;
+	background: rgba(255, 255, 255, 0.14);
+	backdrop-filter: blur(16px) saturate(160%);
+	-webkit-backdrop-filter: blur(16px) saturate(160%);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+	text-align: center;
+}
+
+.announceText {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 20px;
+	color: #ffffff;
+}
+
+.announceBtn {
+	display: inline-block;
+	padding: 6px 20px;
+	background: #242424;
+	color: #ffffff;
+	border-radius: 24px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 20px;
+	text-decoration: none;
+}
+
 .introLogo {
 	display: none;
 }
 
 .topSection {
-	margin-top: 136px;
+	margin-top: 24px;
 	flex-direction: column;
 	align-items: center;
 }
@@ -253,7 +287,7 @@
 }
 
 .operateWrap {
-	margin-top: 100px;
+	margin-top: 60px;
 	flex-direction: column;
 }
 
